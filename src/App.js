@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header/index.tsx'
+import CardsContainer from './components/cardscontainer/index.tsx';
+import SideBar from './components/sidebar/index.tsx'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <CardsContainer />
+      <section id='rodape'>
+        <p>Desenvolvido por Lucas Rodrigues</p>
+      </section>
+      
     </div>
-  );
+  )
 }
 
 export default App;
